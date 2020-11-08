@@ -26,8 +26,8 @@ After the repository has been clones, for any furure updates issue the, `git pul
 
 Run the docker build and run commands as per the development environment,
 ```
-docker build -t lab-web .
-docker run -it --rm -d -p 80:80 --name labweb lab-web
+sudo docker build -t lab-web .
+sudo docker run -it --rm -d -p 80:80 --name labweb lab-web
 ```
 
 ## Tasks
