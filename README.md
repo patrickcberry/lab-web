@@ -17,6 +17,12 @@ docker stop labweb
 ```
 _The contain is automatically remove through the use of the `--rm` tag when the run._
 
+## Push to GitHub
+Using Visual Code, Powershell terminal run the `update.bat` file:
+```
+.\\update.bat
+```
+
 ## Deploy
 On the remote machine, initally, `clone` the Github repository:
 ```
