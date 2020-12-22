@@ -1,7 +1,8 @@
 # lab-web
-Static website for home lab landing page.
+Static documentation website for Industry 4.0 Test Lab.
 
 ## Build and Test Local
+Building and testing locally requires that the Docker engine be installed.
 
 Build image:
 ```
@@ -15,7 +16,12 @@ Stop:
 ```
 docker stop labweb
 ```
-_The contain is automatically remove through the use of the `--rm` tag when the run._
+_The container is automatically removed through the use of the `--rm` tag._
+
+Single batch file build and run:
+```
+run.bat
+```
 
 ## Push to GitHub
 Using Visual Code, Powershell terminal run the `update.bat` file:
@@ -27,9 +33,10 @@ On the remote machine, initally, `clone` the Github repository:
 ```
 git clone https://github.com/patrickcberry/lab-web.git
 ```
+
 After the repository has been cloned, for any furure updates issue the, `git pull` command.
 
-Change director to `lab-web`
+Change directory to `lab-web`
 ```
 cd lab-web
 ```
@@ -37,17 +44,13 @@ cd lab-web
 Run the docker build and run commands as per the development environment,
 ```
 sudo docker build -t lab-web .
-sudo docker run -it --rm -d -p 80:8080 --name labweb lab-web
+sudo docker run -it --rm -d -p 8080:80 --name labweb lab-web
 ```
 Using the bash script:
 ```
 sudo sh ./deploy.sh
 ```
-## Tasks
-- [X] Create a batch file to build and run
-- [X] Create a shell script to pull and deploy
-- [ ] Investigate live reload options
-
-
-
-
+Note: the bash script above will:
++ Pull the latest version from GitHub
++ Build the container
++ Deploy the new container
