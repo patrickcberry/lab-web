@@ -37,7 +37,7 @@ cd lab-web
 Run the docker build and run commands as per the development environment,
 ```
 sudo docker build -t lab-web .
-sudo docker run -it --rm -d -p 80:80 --name labweb lab-web
+sudo docker run -it --rm -d -p 80:8080 --name labweb lab-web
 ```
 Using the bash script:
 ```
