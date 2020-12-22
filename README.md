@@ -27,7 +27,12 @@ On the remote machine, initally, `clone` the Github repository:
 ```
 git clone https://github.com/patrickcberry/lab-web.git
 ```
-After the repository has been clones, for any furure updates issue the, `git pull` command.
+After the repository has been cloned, for any furure updates issue the, `git pull` command.
+
+Change director to `lab-web`
+```
+cd lab-web
+```
 
 Run the docker build and run commands as per the development environment,
 ```
